@@ -1,0 +1,27 @@
+h2 {
+  color: pink;
+}
+.btn1 {
+  position: relative;
+  padding: 50px 60px;
+  border-radius: 50%;
+  border: thin;
+}
+body {
+  text-align: center;
+}
+.search {
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: medium;
+}
+.card-title1 {
+  font-size: 35px;
+}
+.card-body1 {
+  font-size: 35px;
+}
+.update {
+  font-size: x-small;
+}
