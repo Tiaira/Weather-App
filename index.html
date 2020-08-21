@@ -1,62 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    
     <title>Wireframe</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css"/>
+    <script src="src/index.js"></script>
     <script src="https://kit.fontawesome.com/74cb22e0f0.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
+  </head>
+  
+  <body>
     <h1>What's the Weather</h1>
     <h2><button type="button" class="btn1 btn-info">User</button></h2>
-    <h3>
-        <p>
-        <form>
-            <div class="search">
-                <input type="text" placeholder="City Search" autocomplete="off" id="search-input" /> <input
-                    type="submit" value="Search" id="search" />
-        </form>
-        </p>
+    <h3> <p><form id="search-form">  
+        <div class="search"> 
+        <input type="text" placeholder="City Search" autocomplete="off" id="search-input"/> <input type="submit" value="Search" id="search" /></form></p>
         </div>
-    </h3>
-
+        </h3>
+        
     <h4 id="date-and-time"> Date and Time</h4>
 
-    <p>
-    <form type="text" placeholder="Search"></form>
-    </p>
-    <hr />
+    <p><form type="text" placeholder="Search"
+        ></form></p>
+    <hr/>
 
-    <p>
-    <div class="card-group">
+    <p><div class="card-group">
         <div class="card">
             <div class="card-body1">
-                <h5 class="card-title1">Columbia, MD</h5>
+                <h5 class="card-title1">Currently...</h5>
                 <p class="card-text"> Cool 76°F</p>
                 <i class="far fa-sun"></i>
                 <p class="update"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
         <div class="card">
-
+           
             <div class="card-body">
                 <h5 class="card-title">Other things to think about...</h5>
-                <p class="card-text">Humidity 15%<br /> Percipitation 0%<br /> Windchill 0%</p>
-
+                <p class="card-text">Humidity 15%<br/> Percipitation 0%<br/> Windchill 0%</p>
+                
             </div>
         </div>
-
-    </div>
-    </p>
-    <p>
-    <div class="container">
+        
+    </div></p>
+    <p><div class="container">
         <div class="row">
             <div class="col-sm">
                 Tonight <i class="far fa-moon"></i>
@@ -64,7 +59,7 @@
                     <i class="fas fa-cloud"></i>
                     <div class="card-body">
                         <p class="card-text"> Cloudy 70°F
-                        </p>
+                            </p>
                     </div>
                 </div>
             </div>
@@ -111,6 +106,7 @@
     </div>
     </p>
 
-</body>
-
+  </body>
+  
 </html>
+
