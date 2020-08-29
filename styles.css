@@ -1,27 +1,44 @@
-h2 {
+h3 {
   color: pink;
 }
 .btn1 {
-  position: relative;
-  padding: 50px 60px;
-  border-radius: 50%;
   border: thin;
-}
-body {
+  font-size: large;
   text-align: center;
 }
-.search {
-  position: fixed;
-  top: 0;
-  right: 0;
+
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #e6e6fa;
+}
+h1 {
+  font-size: x-large;
+}
+
+h2 {
   font-size: medium;
 }
+
 .card-title1 {
   font-size: 35px;
 }
 .card-body1 {
-  font-size: 35px;
+  font-size: medium;
 }
 .update {
   font-size: x-small;
+}
+
+.card-group {
+  word-spacing: 5px;
+  border: 0;
+  text-align: center;
+}
+
+#searching.value {
+  font-size: 300px;
 }
