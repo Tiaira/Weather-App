@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>Wireframe</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="styles.css"/>
-    
+    <link rel="stylesheet" href="styles.css" />
+
     <script src="https://kit.fontawesome.com/74cb22e0f0.js" crossorigin="anonymous"></script>
-  </head>
-  
-  <body>
-    <h1>What's the Weather</h1>
-    <h2><button type="button" class="btn1 btn-info">User</button></h2>
-    <h3> <p><form id="search-form">  
-        <div class="search"> 
-        <input type="text" placeholder="City Search" autocomplete="off" id="search-input"/> <input type="submit" value="Search" id="search" /></form></p>
-        </div>
-        </h3>
-        
-    <h4 id="date-and-time"> Date and Time</h4>
+</head>
 
-    <hr/>
+<body>
 
-    <p><div class="card-group">
-        <div class="card">
-            <div class="card-body1">
-                <h5 class="card-title1">Currently...</h5>
-                <p class="card-text"> Cool 76°F</p>
-                <i class="far fa-sun"></i>
-                <p class="update"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-8"><h1>What's the Weather ?</h1></div>
+        <div class="col-6 col-md-4"><h2>
+            <p>
+            <form id="search-form">
+                <div class="search">
+                    <input type="text" placeholder="City Search" autocomplete="off" id="search-input" /> <input type="submit"
+                        value="Search" id="search" />
+            </form>
+            </p>
             </div>
+        </h2>
+    </div>
+    
+<div class="row">
+    <div class="col-12 col-sm-6 col-md-8">
+        <div class="card-body1">
+        <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny" id="icon"/>
+        <h3 id="btn1 btn-info">0 °F | °C</h3>
         </div>
-        <div class="card">
-           
-            <div class="card-body">
-                <h5 class="card-title">Other things to think about...</h5>
-                <p class="card-text">Humidity 15%<br/> Percipitation 0%<br/> Windchill 0%</p>
-                
-            </div>
+    </div>
+    <div class="col-6 col-md-4">
+        <div class="card-body">
+            <h4 id="date-and-time"> Date and Time</h4>
+            <p class="card-text">Humidity 15%<br /> Percipitation 0%<br /> Windchill 0%</p>
+        
         </div>
         
-    </div></p>
-    <p><div class="container">
+    </div>
+</div>
+
+    
+    
+    </p>
+    <p>
+    <div class="container">
         <div class="row">
             <div class="col-sm">
                 Tonight <i class="far fa-moon"></i>
@@ -57,7 +59,7 @@
                     <i class="fas fa-cloud"></i>
                     <div class="card-body">
                         <p class="card-text"> Cloudy 70°F
-                            </p>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -103,8 +105,8 @@
         </div>
     </div>
     </p>
-<script src="index.js"></script>
-  </body>
-  <footer>https://github.com/Tiaira/Weather-App</footer>
-</html>
+    <script src="index.js"></script>
+</body>
+<footer> <a href="https://github.com/Tiaira/Weather-App"> Coded</a> by Tiaira Bates </footer>
 
+</html>
