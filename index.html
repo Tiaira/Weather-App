@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/styles.css" />
     ​
     <script
       src="https://kit.fontawesome.com/74cb22e0f0.js"
@@ -64,62 +64,51 @@
         </div>
       </div>
       ​
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            Tonight <i class="far fa-moon"></i>
-            <div class="card" style="width: 11rem">
-              <div class="card-body">
-                <i class="far fa-moon"></i>
-                <p class="card-text">Cloudy 70°F</p>
-              </div>
-            </div>
+      <div class="row weather-forecast">
+        <div class="col-2">
+          <h4>Mon</h4>
+          <div class="weather-forecast-temperature">
+            <strong>92°|</strong> 84°
           </div>
-          <div class="col-sm">
-            Tomorrow
-            <div class="card" style="width: 11rem">
-              <i class="fas fa-temperature-high"></i>
-              <div class="card-body">
-                <p class="card-text">97°F</p>
-              </div>
-            </div>
+        </div>
+
+        <div class="col-2">
+          <h4>Tues</h4>
+          <div class="weather-forecast-temperature">
+            <strong>92°|</strong> 84°
           </div>
-          <div class="col-sm">
-            Wednesday
-            <div class="card" style="width: 11rem">
-              <i class="fas fa-poo-storm"></i>
-              <div class="card-body">
-                <p class="card-text">95°F Thunderstorms</p>
-              </div>
-            </div>
+        </div>
+
+        <div class="col-2">
+          <h4>Wed</h4>
+          <div class="weather-forecast-temperature">
+            <strong>92°|</strong> 84°
           </div>
-          <div class="col-sm">
-            Thursday
-            <div class="card" style="width: 11rem">
-              <i class="far fa-sun"></i>
-              <div class="card-body">
-                <p class="card-text">91°F Clear Skies</p>
-              </div>
-            </div>
+        </div>
+
+        <div class="col-2">
+          <h4>Thurs</h4>
+          <div class="weather-forecast-temperature">
+            <strong>92°|</strong> 84°
           </div>
-          <div class="col-sm">
-            Friday
-            <div class="card" style="width: 11rem">
-              <i class="fas fa-cloud-showers-heavy"></i>
-              <div class="card-body">
-                <p class="card-text">91°F Rain Possible</p>
-              </div>
-            </div>
+        </div>
+
+        <div class="col-2">
+          <h4>Fri</h4>
+          <div class="weather-forecast-temperature">
+            <strong>92°|</strong> 84°
           </div>
-          <div class="col-sm">
-            <button type="button" class="btn btn-success">
-              Load 1 more week
-            </button>
+        </div>
+
+        <div class="col-2">
+          <h4>Sat</h4>
+          <div class="weather-forecast-temperature">
+            <strong>92°|</strong> 84°
           </div>
         </div>
       </div>
-      <script src="index.js"></script>
-      <footer>
+      <script src="src/index.js"></script>
+      <footer id="footer">
         <a href="https://github.com/Tiaira/Weather-App"> Coded</a> by Tiaira
         Bates
       </footer>
