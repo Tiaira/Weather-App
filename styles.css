@@ -1,4 +1,4 @@
-h3 {
+h2 {
   color: pink;
 }
 .btn1 {
@@ -10,17 +10,28 @@ h3 {
 body {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
   border: 1px solid;
   border-radius: 10px;
-  background-color: #e6e6fa;
-}
-h1 {
-  font-size: x-large;
 }
 
-h2 {
-  font-size: medium;
+h1 {
+  font-size: 25px;
+}
+
+.app-body {
+  background-color: #e6e6fa;
+  border-radius: 10px;
+}
+
+#date-and-time {
+  padding-left: 35px;
+  padding-bottom: 100px;
+  margin: -40px;
+  font-size: 25px;
+}
+.card-text {
+  font-size: large;
+  word-spacing: 10px;
 }
 
 .card-title1 {
@@ -28,7 +39,9 @@ h2 {
 }
 .card-body1 {
   font-size: medium;
+  text-align: center;
 }
+
 .update {
   font-size: x-small;
 }
@@ -37,8 +50,4 @@ h2 {
   word-spacing: 5px;
   border: 0;
   text-align: center;
-}
-
-#searching.value {
-  font-size: 300px;
 }
