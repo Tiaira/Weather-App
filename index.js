@@ -1,13 +1,13 @@
 function submitCity(event) {
   event.preventDefault();
   let searching = document.querySelector("#search-input");
-  let h2 = document.querySelector("h2");
+  let h1 = document.querySelector("h1");
 
   if (searching.value) {
-    h2.innerHTML = `Currently in ${searching.value}`;
+    h1.innerHTML = `Currently in ${searching.value}`;
     showTemp(searching.value);
   } else {
-    h2.innerHTML = null;
+    h1.innerHTML = null;
     alert("Please enter a city");
   }
 }
@@ -28,9 +28,9 @@ let days = [
 let day = days[currentDayTime.getDay()];
 let hours = currentDayTime.getHours();
 let minutes = currentDayTime.getMinutes();
-let h4 = document.querySelector("h4");
+let h3 = document.querySelector("h3");
 
-h4.innerHTML = `${day} ${hours}:${minutes}`;
+h3.innerHTML = `${day} ${hours}:${minutes}`;
 
 //showTemperature, replace city name, extra(current button)
 function showTemperature(response) {
@@ -39,12 +39,13 @@ function showTemperature(response) {
 
   console.log(response.data.main.temp);
   let temp = Math.round(response.data.main.temp);
-  let h3 = document.querySelector("h3");
-  h3.innerHTML = `${temp}°F`;
+  let h2 = document.querySelector("h2");
+  h2.innerHTML = `${temp}°F`;
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/10d@2x.png`
   );
+  iconElement.setAttribute("alt", response.data);
 }
 function showTemp(city) {
   let units = "imperial";
