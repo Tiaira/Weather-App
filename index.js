@@ -43,10 +43,11 @@ function showTemperature(response) {
   h2.innerHTML = `${temp}°F`;
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/10d@2x.png`
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  iconElement.setAttribute("alt", response.data);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
+
 function showTemp(city) {
   let units = "imperial";
   let apiKey = "6554fd34d0e6f9c06e401d48f72e3d1c";
