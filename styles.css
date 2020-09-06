@@ -60,3 +60,7 @@ h1 {
   text-align: center;
   padding: 10px;
 }
+
+.weather-forecast-temperature img {
+  margin: -10px;
+}
