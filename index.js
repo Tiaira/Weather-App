@@ -61,8 +61,9 @@ function showTemperature(response) {
 }
 
 function formatHours(timeStamp) {
-  let hours = currentDayTime.getHours();
-  let minutes = currentDayTime.getMinutes();
+  let time = new Date(timeStamp);
+  let hours = time.getHours();
+  let minutes = time.getMinutes();
 
   return `${hours}: ${minutes}`;
 }
