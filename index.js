@@ -1,4 +1,3 @@
-
 function displayCelsiusTemperature(event) {
   event.preventDefault();
   let celsiusTemperature = ((32 - 32) * 5) / 9;
@@ -61,20 +60,22 @@ function showTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-function formatHours(timeStamp){
-  
+function formatHours(timeStamp) {
   let hours = currentDayTime.getHours();
   let minutes = currentDayTime.getMinutes();
-  return ${hours}:${minutes}`;
+
+  return `${hours}: ${minutes}`;
 }
 
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
-  let forecast = response.data.list[0];
-  console.log(forecast);
+  forecastElement.innerHTML = null;
+  let forecast = null;
 
-  forcastElement.innerHTML = `
-  <div class="col-2">
+  for (let index = 0; index < 6; index++) {
+    let forecast = response.data.list[index];
+    forecastElement.innerHTML += `
+     <div class="col-2">
           <h4> ${formatHours(forecast.dt * 1000)}
           </h4>
           <div class="weather-forecast-temperature">
@@ -89,27 +90,8 @@ function displayForecast(response) {
               forecast.main.temp_max
             )}°|</strong> ${Math.round(forecast.main.temp_min)}°
           </div>
-        </div>`;
-
-forecast = response.data.list[1];
-forecastElement.innerHTML = ` forecastElement.innerHTML +
-    < div class="col-2" >
-      <h4> ${formatHours(forecast.dt * 1000)}
-      </h4>
-      <div class="weather-forecast-temperature">
-        <img
-          src="http://openweathermap.org/img/wn/${
-                forecast.weather[0].icon
-              }@2x.png"
-          alt="Sunny"
-          id="icon"
-        />
-        <strong>${Math.round(
-          forecast.main.temp_max
-        )}°|</strong> ${Math.round(forecast.main.temp_min)}°
-          </div>
-        </div >`;
-  
+    </div>`;
+  }
 }
 
 function showTemp(city) {
